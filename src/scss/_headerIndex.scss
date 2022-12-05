@@ -1,0 +1,19 @@
+
+.headerIndex {
+	background-image: url(../img/bannerIndex.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $color_1;
+	text-decoration: underline;
+	h1 {
+		background-color: $background-color_1;
+		opacity: 80%;
+	}
+}

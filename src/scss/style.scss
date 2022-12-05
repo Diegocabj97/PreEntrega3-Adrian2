@@ -1,0 +1,73 @@
+$color_1: white;
+$color_2: rgba(0,0,0,.87);
+$color_3: rgb(255, 255, 255);
+$color_4: rgb(253, 4, 4);
+$color_5: rgb(233, 233, 233);
+$color_6: rgb(7, 7, 7);
+$background-color_1: black;
+$background-color_2: rgb(1, 120, 255);
+$background-color_3: rgb(0, 0, 0);
+
+@import "headerIndex";
+@import "prItems";
+@import "contactos";
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+nav {
+	text-decoration: none;
+	color: $color_1;
+}
+.carrouselCards {
+	display: flex;
+	justify-content: space-evenly;
+}
+.card {
+	img {
+		max-width: 100%;
+		max-height: 200px;
+	}
+}
+.carousel-inner {
+	margin-bottom: 50px;
+}
+
+.mainPr {
+	width: 75%;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.carousel-item {
+	transition: transform 1s ease, opacity .9s ease-out;
+}
+header {
+	h4 {
+		text-align: center;
+		margin: auto;
+		background-color: $background-color_2;
+		color: $color_1;
+		height: 80px;
+		width: 15%;
+		margin-top: 50px;
+		padding: 25px;
+	}
+}
+.Marcas {
+	text-align: center;
+	justify-content: center;
+	color: $color_3;
+	font-size: large;
+	background-color: $background-color_3;
+	position: relative;
+}
+@media (max-width:550px) {
+	.carrouselCards {
+		p {
+			margin-left: -900px;
+		}
+	}
+}

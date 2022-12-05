@@ -1,0 +1,77 @@
+
+.mainContactos {
+	margin-bottom: 100px;
+	width: 100%;
+}
+.formContactos {
+	color: $color_5;
+	background-color: $background-color_3;
+	font-size: 24px;
+	font-weight: 40px;
+	padding: 40px;
+	border-radius: 50px;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+	h2 {
+		grid-area: Formulario;
+	}
+	label {
+		&:nth-child(2) {
+			grid-area: nombre;
+		}
+		&:nth-child(3) {
+			grid-area: apellido;
+		}
+		&:nth-child(4) {
+			grid-area: consulta;
+		}
+		&:nth-child(5) {
+			grid-area: telefono;
+		}
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+	}
+	.sendbtn {
+		grid-area: boton;
+	}
+	input {
+		outline: none;
+		border: none;
+		border-bottom: 1px solid red;
+	}
+	textarea {
+		outline: none;
+		border: none;
+		border-bottom: 1px solid red;
+	}
+}
+.sendbtn {
+	text-align: center;
+}
+.subt {
+	color: $color_6;
+	text-decoration: underline;
+	text-align: center;
+	position: relative;
+}
+.formTCN {
+	label {
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+	}
+	input {
+		outline: none;
+		border: none;
+		border-bottom: 1px solid red;
+	}
+	textarea {
+		outline: none;
+		border: none;
+		border-bottom: 1px solid red;
+	}
+}
