@@ -4,8 +4,8 @@
 	width: 100%;
 }
 .formContactos {
-	color: $color_5;
-	background-color: $background-color_3;
+	color: $color1;
+	background-color: $background-color1;
 	font-size: 24px;
 	font-weight: 40px;
 	padding: 40px;
@@ -47,13 +47,14 @@
 		outline: none;
 		border: none;
 		border-bottom: 1px solid red;
+		background-color: $color2;
 	}
 }
 .sendbtn {
 	text-align: center;
 }
 .subt {
-	color: $color_6;
+	color: $color1;
 	text-decoration: underline;
 	text-align: center;
 	position: relative;
