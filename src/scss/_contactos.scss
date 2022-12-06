@@ -3,6 +3,29 @@
 	margin-bottom: 100px;
 	width: 100%;
 }
+.tituloContactos{
+	width: 100%;
+	& h1{
+		width: 450px;
+		text-align: center;
+	}
+}
+	
+.redes{
+	width: 450px;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	& a{
+		img{
+			width: 100px;
+			margin: 20px;
+			border-radius: 50px;
+		}
+	}
+	}
+
 .formContactos {
 	color: $color1;
 	background-color: $background-color1;
@@ -34,22 +57,35 @@
 		display: flex;
 		flex-direction: column;
 		padding: 5px;
+
+		
+		input{
+			background-color: $color2;
+			outline: none;
+			border: none;
+			border-bottom: 1px solid red;
+			color: $color1;
+		}
 	}
 	.sendbtn {
 		grid-area: boton;
 	}
 	input {
 		outline: none;
-		border: none;
-		border-bottom: 1px solid red;
+		border: 1px solid;
+				
 	}
 	textarea {
+		margin: auto;
+		width: 80%;
 		outline: none;
 		border: none;
 		border-bottom: 1px solid red;
-		background-color: $color2;
+		background-color: $color1;
+		color: $color2;
+		font-size: small;
 	}
-}
+	}
 .sendbtn {
 	text-align: center;
 }
@@ -76,3 +112,68 @@
 		border-bottom: 1px solid red;
 	}
 }
+
+@media (max-width:990px){
+
+	.tituloContactos{
+		
+		width: 100%;
+		
+		& h1{
+		width: 100%;
+		font-size: 24px;
+	}
+}
+	
+	.redes{
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+			& a{
+				img{
+					width: 50px;
+					margin: 15px;
+					border-radius: 50px;
+				}
+			}
+	}
+}
+@media (max-width:510px){
+		.tituloContactos {
+			text-align: center;
+			height: 130px;
+			
+		}
+		.formContactos{
+				width: 75%;
+		}
+		.sendbtn{
+			display: flex;
+			padding: 10px;
+			input{
+				width: 50%;
+				height: 50%;
+				font-size: 50%;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				
+			
+			}
+			margin-top: 20px;
+						
+
+				
+		}
+		
+		
+	}
+	@media(max-width:438){
+		.formContactos {
+		
+			& h3{
+				color: red;
+			}
+		}
+
+	}

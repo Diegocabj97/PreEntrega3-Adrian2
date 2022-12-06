@@ -1,20 +1,6 @@
-.headerIndex {
-  background-image: url(../img/bannerIndex.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-decoration: underline;
-}
-.headerIndex h1 {
-  background-color: black;
-  opacity: 80%;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .Pr5600 {
@@ -49,7 +35,7 @@
   text-align: center;
 }
 .Pr5600 figure div h3 {
-  color: rgb(253, 4, 4);
+  color: rgb(255, 0, 0);
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -102,7 +88,7 @@
   text-align: center;
 }
 .PrVideos figure div h3 {
-  color: rgb(253, 4, 4);
+  color: rgb(255, 0, 0);
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -155,7 +141,7 @@
   text-align: center;
 }
 .PrFuentes figure div h3 {
-  color: rgb(253, 4, 4);
+  color: rgb(255, 0, 0);
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -208,7 +194,7 @@
   text-align: center;
 }
 .PrMouses figure div h3 {
-  color: rgb(253, 4, 4);
+  color: rgb(255, 0, 0);
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -261,7 +247,7 @@
   text-align: center;
 }
 .PrGabinetes figure div h3 {
-  color: rgb(253, 4, 4);
+  color: rgb(255, 0, 0);
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -314,7 +300,7 @@
   text-align: center;
 }
 .PrMousePads figure div h3 {
-  color: rgb(253, 4, 4);
+  color: rgb(255, 0, 0);
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -367,7 +353,7 @@
   text-align: center;
 }
 .PrRams figure div h3 {
-  color: rgb(253, 4, 4);
+  color: rgb(255, 0, 0);
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -420,7 +406,7 @@
   text-align: center;
 }
 .PrB450m figure div h3 {
-  color: rgb(253, 4, 4);
+  color: rgb(255, 0, 0);
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -473,7 +459,7 @@
   text-align: center;
 }
 .PrTeclados figure div h3 {
-  color: rgb(253, 4, 4);
+  color: rgb(255, 0, 0);
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -499,8 +485,29 @@
   width: 100%;
 }
 
+.tituloContactos {
+  width: 100%;
+}
+.tituloContactos h1 {
+  width: 450px;
+  text-align: center;
+}
+
+.redes {
+  width: 450px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.redes a img {
+  width: 100px;
+  margin: 20px;
+  border-radius: 50px;
+}
+
 .formContactos {
-  color: rgb(233, 233, 233);
+  color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   font-size: 24px;
   font-weight: 40px;
@@ -532,18 +539,29 @@
 .formContactos label:nth-child(5) {
   grid-area: telefono;
 }
+.formContactos label input {
+  background-color: rgba(0, 0, 0, 0.87);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid red;
+  color: rgb(255, 255, 255);
+}
 .formContactos .sendbtn {
   grid-area: boton;
 }
 .formContactos input {
   outline: none;
-  border: none;
-  border-bottom: 1px solid red;
+  border: 1px solid;
 }
 .formContactos textarea {
+  margin: auto;
+  width: 80%;
   outline: none;
   border: none;
   border-bottom: 1px solid red;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.87);
+  font-size: small;
 }
 
 .sendbtn {
@@ -551,7 +569,7 @@
 }
 
 .subt {
-  color: rgb(7, 7, 7);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
   text-align: center;
   position: relative;
@@ -573,6 +591,52 @@
   border-bottom: 1px solid red;
 }
 
+@media (max-width: 990px) {
+  .tituloContactos {
+    width: 100%;
+  }
+  .tituloContactos h1 {
+    width: 100%;
+    font-size: 24px;
+  }
+  .redes {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .redes a img {
+    width: 50px;
+    margin: 15px;
+    border-radius: 50px;
+  }
+}
+@media (max-width: 510px) {
+  .tituloContactos {
+    text-align: center;
+    height: 130px;
+  }
+  .formContactos {
+    width: 75%;
+  }
+  .sendbtn {
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .sendbtn input {
+    width: 50%;
+    height: 50%;
+    font-size: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (max-width: 438) {
+  .formContactos h3 {
+    color: red;
+  }
+}
 .Marcas {
   text-align: center;
   justify-content: center;
@@ -612,21 +676,35 @@
   margin-bottom: 100px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.headerIndex {
+  background-image: url(../img/bannerIndex.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+.headerIndex h1 {
+  background-color: rgb(0, 0, 0);
+  opacity: 80%;
 }
 
 nav {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 header h4 {
   text-align: center;
   margin: auto;
   background-color: rgb(1, 120, 255);
-  color: white;
+  color: rgb(255, 255, 255);
   height: 80px;
   width: 15%;
   margin-top: 50px;
