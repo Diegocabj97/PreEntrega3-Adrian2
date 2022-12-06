@@ -11,6 +11,9 @@ $background-color_3: rgb(0, 0, 0);
 @import "headerIndex";
 @import "prItems";
 @import "contactos";
+@import "marcas";
+@import "carousel";
+@import "main";
 
 
 *{
@@ -21,29 +24,12 @@ nav {
 	text-decoration: none;
 	color: $color_1;
 }
-.carrouselCards {
-	display: flex;
-	justify-content: space-evenly;
-}
-.card {
-	img {
-		max-width: 100%;
-		max-height: 200px;
-	}
-}
-.carousel-inner {
-	margin-bottom: 50px;
-}
 
-.mainPr {
-	width: 75%;
-	margin: auto;
-	margin-top: 100px;
-	margin-bottom: 100px;
-}
-.carousel-item {
-	transition: transform 1s ease, opacity .9s ease-out;
-}
+
+
+
+
+
 header {
 	h4 {
 		text-align: center;
@@ -54,20 +40,5 @@ header {
 		width: 15%;
 		margin-top: 50px;
 		padding: 25px;
-	}
-}
-.Marcas {
-	text-align: center;
-	justify-content: center;
-	color: $color_3;
-	font-size: large;
-	background-color: $background-color_3;
-	position: relative;
-}
-@media (max-width:550px) {
-	.carrouselCards {
-		p {
-			margin-left: -900px;
-		}
 	}
 }

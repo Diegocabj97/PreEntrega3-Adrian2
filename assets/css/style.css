@@ -573,6 +573,45 @@
   border-bottom: 1px solid red;
 }
 
+.Marcas {
+  text-align: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.carrouselCards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.carousel-inner {
+  margin-bottom: 50px;
+}
+
+.carousel-item {
+  transition: transform 1s ease, opacity 0.9s ease-out;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+@media (max-width: 550px) {
+  .carrouselCards p {
+    margin-left: -900px;
+  }
+}
+.mainPr {
+  width: 75%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -581,31 +620,6 @@
 nav {
   text-decoration: none;
   color: white;
-}
-
-.carrouselCards {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.card img {
-  max-width: 100%;
-  max-height: 200px;
-}
-
-.carousel-inner {
-  margin-bottom: 50px;
-}
-
-.mainPr {
-  width: 75%;
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.carousel-item {
-  transition: transform 1s ease, opacity 0.9s ease-out;
 }
 
 header h4 {
@@ -617,19 +631,4 @@ header h4 {
   width: 15%;
   margin-top: 50px;
   padding: 25px;
-}
-
-.Marcas {
-  text-align: center;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  font-size: large;
-  background-color: rgb(0, 0, 0);
-  position: relative;
-}
-
-@media (max-width: 550px) {
-  .carrouselCards p {
-    margin-left: -900px;
-  }
 }
