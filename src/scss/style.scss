@@ -14,7 +14,17 @@
 nav {
 	text-decoration: none;
 	color: $color1;
-}
+	
+	& ul :hover{
+		background-color: rgb(3, 47, 97);
+		transition: 0.7s;
+		
+		& li :hover{
+			background-color: rgb(3, 47, 97);
+			transition: 0.7s;
+		}
+	}
+	}
 header {
 	h4 {
 		text-align: center;
