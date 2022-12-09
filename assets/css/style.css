@@ -653,6 +653,7 @@
 
 .carousel-inner {
   margin-bottom: 50px;
+  width: 100vw;
 }
 
 .carousel-item {
@@ -700,6 +701,7 @@
 nav {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  z-index: 1;
 }
 nav ul :hover {
   background-color: rgb(3, 47, 97);
