@@ -647,13 +647,16 @@
 }
 
 .carrouselCards {
+  margin-top: 80px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .carousel-inner {
   margin-bottom: 50px;
   width: 100vw;
+  height: 500px;
 }
 
 .carousel-item {
@@ -670,11 +673,37 @@
     margin-left: -900px;
   }
 }
+@media (max-width: 898px) {
+  .carrouselCards {
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .carousel-inner {
+    height: auto;
+    margin-top: 0px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 20px;
+    margin-top: 0px;
+  }
+}
 .mainPr {
   width: 75%;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+.mainPr h4 {
+  text-align: center;
+  text-decoration: underline;
+  transform: translateX(100%);
+  transition: 0.5s;
 }
 
 .headerIndex {
@@ -698,6 +727,43 @@
   opacity: 80%;
 }
 
+@media (max-width: 898px) {
+  .headerIndex {
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.btn {
+  background-color: transparent;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  color: rgb(8, 4, 248);
+  border: 1px solid rgb(8, 4, 248);
+}
+
+.card {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+
+#formgarantia {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+.descripcion {
+  margin-left: 100px;
+  background-color: red;
+}
+
 nav {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -712,13 +778,42 @@ nav ul :hover li :hover {
   transition: 0.7s;
 }
 
+.btn:hover {
+  background-color: red;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.7s;
+  border: 1px solid rgb(0, 0, 5);
+}
+
 header h4 {
-  text-align: center;
   margin: auto;
   background-color: rgb(1, 120, 255);
   color: rgb(255, 255, 255);
   height: 80px;
-  width: 15%;
+  width: 50%;
   margin-top: 50px;
   padding: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 534px) {
+  header h4 {
+    text-align: center;
+    height: 80px;
+    width: 30%;
+    margin-top: 50px;
+    padding: 15px;
+  }
+}
+@media (max-width: 456px) {
+  header h4 {
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 12px;
+    font-size: 20px;
+  }
 }

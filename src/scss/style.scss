@@ -7,9 +7,11 @@
 @import "contactos";
 @import "marcas";
 @import "carousel";
-@import "main";
+@import "mainPr";
 @import "headerindex";
-
+@import "card";
+@import "extend";
+@import "FormST";
 
 nav {
 	text-decoration: none;
@@ -25,18 +27,59 @@ nav {
 			background-color: rgb(3, 47, 97);
 			transition: 0.7s;
 		}
-	}
+}
+}
+.btn{
+	@extend %button;
+}
+.btn:hover{
+	background-color: red;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+	transition: .7s;
+	border: 1px solid rgb(0, 0, 5);
+	
 }
 
 header {
 	h4 {
-		text-align: center;
+		
 		margin: auto;
 		background-color: $background-color2;
 		color: $color1;
 		height: 80px;
-		width: 15%;
+		width: 50%;
 		margin-top: 50px;
 		padding: 25px;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}	
+	
+}
+
+@media (max-width:534px){
+	header{
+		h4{
+			text-align: center;
+			height: 80px;
+			width: 30%;
+			margin-top: 50px;
+			padding: 15px;
+			
+		
+	}
+}
+}
+@media (max-width:456px){
+	header{
+		h4{
+			text-align: center;
+			height: 60px;
+			width: 100%;
+			margin-top: 50px;
+			padding: 12px;
+			font-size: 20px;
+			
+		}
 	}
 }

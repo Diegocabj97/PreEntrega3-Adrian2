@@ -1,10 +1,14 @@
 .carrouselCards {
+	margin-top: 80px;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 }
+
 .carousel-inner {
 	margin-bottom: 50px;
 	width: 100vw;
+	height: 500px;
 }
 .carousel-item {
 	transition: transform 1s ease, opacity .9s ease-out;
@@ -22,4 +26,28 @@
 			margin-left: -900px;
 		}
 	}
+}
+@media (max-width:898px) {
+	.carrouselCards {
+		height: auto;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		margin-top: 0px;
+
+	}
+	
+	.carousel-inner{
+		height: auto;
+		margin-top: 0px;
+		
+	}
+	.card{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		margin: 20px;
+		margin-top: 0px;
+	}
+
 }
