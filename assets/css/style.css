@@ -519,8 +519,10 @@
   text-align: center;
   justify-content: center;
 }
-.formContactos h2 {
+.formContactos h3 {
   grid-area: Formulario;
+  text-align: start;
+  text-decoration: underline;
 }
 .formContactos label {
   display: flex;
@@ -552,6 +554,7 @@
 .formContactos input {
   outline: none;
   border: 1px solid;
+  margin: 5px;
 }
 .formContactos textarea {
   margin: auto;
@@ -633,8 +636,16 @@
   }
 }
 @media (max-width: 438) {
-  .formContactos h3 {
+  .mainContactos h3 {
     color: red;
+    font-size: 10px;
+  }
+}
+@media (max-width: 365px) {
+  .formContactos input {
+    outline: none;
+    border: 1px solid;
+    margin: 1px;
   }
 }
 .Marcas {
@@ -761,7 +772,11 @@
 
 .descripcion {
   margin-left: 100px;
-  background-color: red;
+  background-color: rgba(0, 127, 245, 0.336);
+}
+
+main section {
+  margin-top: 100px;
 }
 
 nav {

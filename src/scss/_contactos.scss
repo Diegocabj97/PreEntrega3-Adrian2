@@ -38,8 +38,10 @@
 	margin: auto;
 	text-align: center;
 	justify-content: center;
-	h2 {
+	h3 {
 		grid-area: Formulario;
+		text-align: start;
+		text-decoration: underline;
 	}
 	label {
 		&:nth-child(2) {
@@ -73,6 +75,7 @@
 	input {
 		outline: none;
 		border: 1px solid;
+		margin: 5px;
 				
 	}
 	textarea {
@@ -169,11 +172,22 @@
 		
 	}
 	@media(max-width:438){
-		.formContactos {
+		.mainContactos {
 		
-			& h3{
+			h3{
 				color: red;
+				font-size: 10px;
 			}
 		}
 
+	}
+	@media(max-width:365px){
+	.formContactos{
+		input {
+			outline: none;
+			border: 1px solid;
+			margin: 1px;
+					
+		}
+	}
 	}
