@@ -494,7 +494,6 @@
   text-align: center;
   background-color: white;
   border-radius: 10px;
-  margin: 10px;
 }
 
 .redes {
@@ -511,6 +510,7 @@
 }
 
 .formContactos {
+  margin: auto;
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   font-size: 24px;
@@ -576,6 +576,16 @@
 
 .sendbtn {
   text-align: center;
+}
+
+.contacto-info {
+  margin: auto;
+  width: 100%;
+}
+
+.bgContactos {
+  width: 100vw;
+  background-size: contain;
 }
 
 .subt {

@@ -12,7 +12,6 @@
 		text-align: center;
 		background-color: white;
 		border-radius: 10px;
-		margin:10px;
 	}
 }
 	
@@ -32,6 +31,7 @@
 	}
 
 .formContactos {
+	margin: auto;
 	color: $color1;
 	background-color: $background-color1;
 	font-size: 24px;
@@ -100,6 +100,15 @@
 .sendbtn {
 	text-align: center;
 }
+.contacto-info{
+	margin: auto;
+	width: 100%;
+}
+.bgContactos{
+	width: 100vw;
+	background-size: contain;
+
+}
 .subt {
 	color: $color1;
 	text-decoration: underline;
@@ -130,7 +139,6 @@
 @media (max-width:990px){
 
 	.tituloContactos{
-		
 		width: 100%;
 		
 		& h1{
@@ -159,7 +167,7 @@
 			
 		}
 		.formContactos{
-				width: 100%;
+			width: 100%;
 		}
 		.sendbtn{
 			display: flex;
