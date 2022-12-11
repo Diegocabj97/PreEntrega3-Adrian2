@@ -2,12 +2,17 @@
 .mainContactos {
 	margin-bottom: 100px;
 	width: 100%;
+	
+	background-size: cover;
 }
 .tituloContactos{
 	width: 100%;
 	& h1{
 		width: 450px;
 		text-align: center;
+		background-color: white;
+		border-radius: 10px;
+		margin:10px;
 	}
 }
 	
@@ -67,6 +72,7 @@
 			border: none;
 			border-bottom: 1px solid red;
 			color: $color1;
+			align-items: center;
 		}
 	}
 	.sendbtn {
@@ -76,18 +82,19 @@
 		outline: none;
 		border: 1px solid;
 		margin: 5px;
-		width: 35%;
-				
+		width: 55%;
+		margin: auto;
+						
 	}
 	textarea {
 		margin: auto;
 		width: 80%;
 		outline: none;
 		border: none;
-		border-bottom: 1px solid red;
 		background-color: $color1;
 		color: $color2;
 		font-size: small;
+		align-items: center;
 	}
 	}
 .sendbtn {
@@ -98,6 +105,7 @@
 	text-decoration: underline;
 	text-align: center;
 	position: relative;
+
 }
 .formTCN {
 	label {
@@ -109,11 +117,13 @@
 		outline: none;
 		border: none;
 		border-bottom: 1px solid red;
+		align-items: center;
 	}
 	textarea {
 		outline: none;
 		border: none;
 		border-bottom: 1px solid red;
+		align-items: center;
 	}
 }
 
@@ -149,7 +159,7 @@
 			
 		}
 		.formContactos{
-				width: 75%;
+				width: 100%;
 		}
 		.sendbtn{
 			display: flex;
@@ -181,14 +191,4 @@
 			}
 		}
 
-	}
-	@media(max-width:365px){
-	.formContactos{
-		input {
-			outline: none;
-			border: 1px solid;
-			margin: 1px;
-					
-		}
-	}
 	}
