@@ -12,6 +12,8 @@
 @import "card";
 @import "extend";
 @import "FormST";
+@import "btnOfertas";
+@import "btnIndex";
 
 nav {
 	text-decoration: none;
@@ -29,16 +31,7 @@ nav {
 		}
 }
 }
-.btn{
-	@extend %button;
-}
-.btn:hover{
-	background-color: red;
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-	transition: .7s;
-	border: 1px solid rgb(0, 0, 5);
-	
-}
+
 
 header {
 	h4 {

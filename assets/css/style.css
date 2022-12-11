@@ -555,6 +555,7 @@
   outline: none;
   border: 1px solid;
   margin: 5px;
+  width: 35%;
 }
 .formContactos textarea {
   margin: auto;
@@ -749,11 +750,22 @@
   transform: translateY(-3%);
 }
 
-.btn {
-  background-color: transparent;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  color: rgb(8, 4, 248);
-  border: 1px solid rgb(8, 4, 248);
+.Comprar {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background: #141414;
+  color: #fff;
+  border: 5px solid;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .card {
@@ -762,6 +774,24 @@
   overflow: hidden;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease;
+}
+
+.ComprarI {
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 50px;
+  background: #141414;
+  color: #fff;
+  border: 5px solid;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 #formgarantia {
@@ -779,6 +809,52 @@ main section {
   margin-top: 100px;
 }
 
+.Comprar span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+
+.Comprar::after {
+  content: "";
+  width: 123%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: calc(-100% - 40px);
+  border-bottom: 40px solid #ff2828;
+  border-right: 40px solid transparent;
+  transition: 0.3s ease-in-out all;
+}
+
+.Comprar:hover::after {
+  left: 0;
+}
+
+.ComprarI span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+
+.ComprarI::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  background: red;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transition: 0.3s ease-in-out all;
+  transform-origin: center;
+  border-radius: 100px;
+}
+
+.ComprarI:hover::after {
+  transform: scale(400);
+}
+
 nav {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -791,13 +867,6 @@ nav ul :hover {
 nav ul :hover li :hover {
   background-color: rgb(3, 47, 97);
   transition: 0.7s;
-}
-
-.btn:hover {
-  background-color: red;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transition: 0.7s;
-  border: 1px solid rgb(0, 0, 5);
 }
 
 header h4 {
