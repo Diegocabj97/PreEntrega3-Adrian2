@@ -681,7 +681,7 @@
 .carousel-inner {
   margin-bottom: 50px;
   width: 100vw;
-  height: 500px;
+  height: 600px;
 }
 
 .carousel-item {
@@ -721,7 +721,7 @@
 .mainPr {
   width: 75%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 .mainPr h4 {
@@ -735,8 +735,6 @@
   background-size: cover;
   height: 400px;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -874,6 +872,42 @@ main section {
   transform: scale(400);
 }
 
+.containerIndex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 50px;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+.containerIndex p {
+  border: solid 1px grey;
+  border-radius: 50px;
+  width: 60%;
+}
+.containerIndex div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 108px;
+}
+.containerIndex h3 {
+  color: rgb(1, 120, 255);
+}
+.containerIndex h3 i {
+  color: rgb(1, 120, 255);
+}
+.containerIndex span {
+  color: rgb(1, 120, 255);
+  font-size: 28px;
+}
+.containerIndex span i {
+  color: rgb(1, 120, 255);
+  font-size: 28px;
+}
+
 nav {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -886,6 +920,21 @@ nav ul :hover {
 nav ul :hover li :hover {
   background-color: rgb(3, 47, 97);
   transition: 0.7s;
+}
+
+.carrito {
+  width: 40px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 95%;
+}
+
+.carrito:hover {
+  background-color: rgb(3, 47, 97);
+  transition: 0.7s;
+  cursor: pointer;
 }
 
 header h4 {

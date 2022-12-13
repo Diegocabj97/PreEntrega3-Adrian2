@@ -14,7 +14,7 @@
 @import "FormST";
 @import "btnOfertas";
 @import "btnIndex";
-
+@import "containerIndex";
 nav {
 	text-decoration: none;
 	color: $color1;
@@ -30,6 +30,19 @@ nav {
 			transition: 0.7s;
 		}
 }
+}
+.carrito{
+	width: 40px;
+	height: 30px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-left: 95%;
+}
+.carrito:hover{
+	background-color: rgb(3, 47, 97);
+	transition: .7s;
+	cursor: pointer;
 }
 
 

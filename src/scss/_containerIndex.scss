@@ -1,0 +1,38 @@
+.containerIndex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    & p{
+        border: solid 1px grey;
+        border-radius: 50px;
+        width: 60%;
+    }
+   & div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 108px;
+    }
+
+    & h3{
+
+        color: $color3;
+        & i{
+            color: $color3;
+        }
+    }
+    & span{
+        color: $color3;
+        font-size: 28px;
+
+        & i{
+            color:$color3;
+            font-size: 28px;
+        }
+    }
+}
