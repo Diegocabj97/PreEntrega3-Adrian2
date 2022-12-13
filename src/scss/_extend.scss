@@ -43,3 +43,19 @@
     overflow: hidden;
 
 }
+
+%sector-contacto{
+    .container{
+        color: white;
+        & .row{
+            & a{
+            text-decoration: none;
+            color: white;
+        } 
+        }
+    }
+    b{
+        background-color:$background-color2;
+        
+    }
+}
