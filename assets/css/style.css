@@ -680,12 +680,15 @@
 
 .carousel-inner {
   margin-bottom: 50px;
-  width: 100vw;
+  max-width: 100%;
   height: 600px;
 }
 
 .carousel-item {
   transition: transform 1s ease, opacity 0.9s ease-out;
+}
+.carousel-item img {
+  width: 100%;
 }
 
 .card img {
@@ -746,6 +749,9 @@
 .headerIndex h1 {
   background-color: rgb(0, 0, 0);
   opacity: 80%;
+}
+.headerIndex img {
+  width: 100%;
 }
 
 @media (max-width: 898px) {
@@ -891,18 +897,23 @@ main section {
   align-items: center;
   text-align: center;
   margin: auto;
-  width: 75%;
+  width: 100%;
 }
 .containerIndex p {
   border: solid 1px grey;
   border-radius: 50px;
-  width: 60%;
+  width: 100%;
 }
 .containerIndex div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 108px;
+  height: 75%;
+  width: 100%;
+}
+.containerIndex div b {
+  width: 100%;
+  font-size: 28px;
 }
 .containerIndex h3 {
   color: rgb(1, 120, 255);
@@ -919,6 +930,115 @@ main section {
   font-size: 28px;
 }
 
+@media (max-width: 1610px) {
+  .containerIndex {
+    padding: 20px;
+    width: 100%;
+  }
+  .containerIndex p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .containerIndex span {
+    text-align: center;
+    color: rgb(1, 120, 255);
+    font-size: 20px;
+  }
+  .containerIndex span i {
+    color: rgb(1, 120, 255);
+    font-size: 20px;
+  }
+  .containerIndex div {
+    text-align: center;
+    margin: 20px;
+  }
+  .containerIndex div b {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 704px) {
+  .containerIndex {
+    padding: 10px;
+    width: 100%;
+  }
+  .containerIndex p {
+    border: none;
+    width: 100%;
+  }
+  .containerIndex span {
+    color: rgb(1, 120, 255);
+    font-size: 15px;
+  }
+  .containerIndex span i {
+    color: rgb(1, 120, 255);
+    font-size: 15px;
+  }
+  .containerIndex div {
+    margin: 10px;
+  }
+  .containerIndex div b {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 584px) {
+  .containerIndex {
+    padding: 0px;
+    width: 100%;
+  }
+  .containerIndex p {
+    border: none;
+    width: 100%;
+  }
+  .containerIndex span {
+    color: rgb(1, 120, 255);
+    font-size: 15px;
+  }
+  .containerIndex span i {
+    color: rgb(1, 120, 255);
+    font-size: 15px;
+  }
+  .containerIndex div {
+    margin: 10px;
+  }
+  .containerIndex div b {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 421px) {
+  .containerIndex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .containerIndex div:nth-child(2) p {
+    margin-left: -30px;
+  }
+  .containerIndex p {
+    width: 100%;
+  }
+  .containerIndex span {
+    color: rgb(1, 120, 255);
+    font-size: 15px;
+  }
+  .containerIndex span i {
+    color: rgb(1, 120, 255);
+    font-size: 15px;
+  }
+  .containerIndex div {
+    margin: 10px;
+    width: 100%;
+  }
+  .containerIndex div b {
+    width: 100%;
+    font-size: 15px;
+  }
+  .containerIndex div p :nth-child(3) {
+    font-size: 50px;
+  }
+}
 nav {
   text-decoration: none;
   color: rgb(255, 255, 255);

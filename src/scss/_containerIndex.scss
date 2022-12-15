@@ -6,17 +6,23 @@
     align-items: center;
     text-align: center;
     margin: auto;
-    width: 75%;
+    width: 100%;
     & p{
         border: solid 1px grey;
         border-radius: 50px;
-        width: 60%;
+        width: 100%;
     }
    & div{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 108px;
+        height: 75%;
+        width: 100%;
+
+        & b{
+            width:100%;
+            font-size: 28px;
+        }
     }
 
     & h3{
@@ -35,4 +41,132 @@
             font-size: 28px;
         }
     }
+}
+
+@media (max-width:1610px){
+    .containerIndex{
+        
+        padding: 20px;
+        width: 100%;
+        & p{
+            width: 100%;
+            font-size: 12px;
+        }
+        & span{
+            text-align: center;
+            color: $color3;
+            font-size: 20px;
+    
+            & i{
+                color:$color3;
+                font-size: 20px;
+            }
+        }
+        & div{
+            text-align: center;
+            margin: 20px;
+            & b{
+                width:100%;
+                font-size: 20px;
+            }
+}
+}
+}
+@media(max-width:704px){
+    .containerIndex{
+        padding: 10px;
+        width: 100%;
+        & p{
+            border: none;
+            width: 100%;
+        }
+        & span{
+            color: $color3;
+            font-size: 15px;
+    
+            & i{
+                color:$color3;
+                font-size: 15px;
+            }
+        }
+        & div{
+            margin: 10px;
+            & b{
+                width:100%;
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media(max-width:584px){
+    .containerIndex{
+        padding: 0px;
+        width: 100%;
+        & p{
+            border: none;
+            width: 100%;
+        }
+        & span{
+            color: $color3;
+            font-size: 15px;
+    
+            & i{
+                color:$color3;
+                font-size: 15px;
+            }
+        }
+        & div{
+            margin: 10px;
+            & b{
+                width:100%;
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media(max-width:421px){
+    .containerIndex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        div:nth-child(2){
+            & p{
+               margin-left: -30px;
+            }
+        
+    }      
+        & p{
+            width: 100%;
+            
+
+        }
+        & span{
+            color: $color3;
+            font-size: 15px;
+    
+            & i{
+                color:$color3;
+                font-size: 15px;
+            }
+        }
+        & div{
+            margin: 10px;
+            width: 100%;
+            & b{
+                width:100%;
+                font-size: 15px;
+
+            }
+            p :nth-child(3){
+                font-size: 50px;
+            
+        }
+            
+            
+        }
+        
+    }
+    
+
 }
