@@ -16,12 +16,13 @@
 @import "btnIndex";
 @import "containerIndex";
 @import "sector-contacto";
+
+
 nav {
 	text-decoration: none;
 	color: $color1;
 	z-index: 1;
 	
-
 	& ul :hover{
 		background-color: rgb(3, 47, 97);
 		transition: 0.7s;
@@ -39,11 +40,18 @@ nav {
 	display: flex;
 	justify-content: center;
 	margin-left: 95%;
+	margin-top: -20px;
+	& a{
+		color: white;
+	}
+	
 }
 .carrito:hover{
 	background-color: rgb(3, 47, 97);
 	transition: .7s;
 	cursor: pointer;
+	
+	color: white;
 }
 
 
@@ -90,19 +98,4 @@ header {
 		}
 	}
 }
-footer{
-font-family: "PT Sans",sans-serif !important;
-font-size: 13px;
-line-height: 22px;
-font-weight: 300;
-box-sizing: border-box;
-display: block;
-padding-top: 15px;
-padding-bottom: 20px;
-min-height: 30px;
-background: #232323;
-background-image: url(../images/background/bg-footer.jpg);
-background-repeat: repeat;
-background-position: top;
-color: #9c9c9c !important;
-}
+	

@@ -45,7 +45,22 @@
 }
 
 %sector-contacto{
+   
     .container{
+        font-family: "PT Sans",sans-serif !important;
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 300;
+        box-sizing: border-box;
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        min-height: 30px;
+        background: #232323;
+        background-image: url(../images/background/bg-footer.jpg);
+        background-repeat: repeat;
+        background-position: top;
+        color: #9c9c9c;
         color: white;
         & .row{
             & a{
