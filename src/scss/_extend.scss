@@ -200,3 +200,23 @@
         text-align: center;
     }	
 }
+%filtroOfertas{
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-between;
+    width: 15%;
+    height: fit-content;
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+    box-sizing: border-box;
+    align-content: flex-start;
+}
+%cardsOfertas{
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid rgba(172, 172, 172, 0.212);
+}
