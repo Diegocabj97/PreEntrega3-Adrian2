@@ -739,34 +739,6 @@
   text-decoration: underline;
 }
 
-.headerIndex {
-  background-image: url(../img/bannerIndex.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-content: center;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
-}
-.headerIndex h1 {
-  background-color: rgb(0, 0, 0);
-  opacity: 80%;
-}
-.headerIndex img {
-  width: 100%;
-}
-
-@media (max-width: 898px) {
-  .headerIndex {
-    margin: auto;
-    margin-top: 20px;
-  }
-}
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
@@ -841,6 +813,121 @@ footer b {
   background-color: rgb(1, 120, 255);
 }
 
+.mainIndex {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 1px solid rgba(128, 128, 128, 0.253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(134, 134, 134, 0.973);
+}
+.mainIndex .clasesCarr {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 50px;
+}
+
+.containerIndex {
+  display: flex;
+  background-color: rgb(236, 234, 234);
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 50px;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+.containerIndex p {
+  border: solid 1px grey;
+  border-radius: 50px;
+  width: 100%;
+}
+.containerIndex div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 75%;
+  width: 100%;
+}
+.containerIndex div b {
+  width: 100%;
+  font-size: 28px;
+}
+.containerIndex h3 {
+  color: rgb(1, 120, 255);
+}
+.containerIndex h3 i {
+  color: rgb(1, 120, 255);
+}
+.containerIndex span {
+  color: rgb(1, 120, 255);
+  font-size: 28px;
+}
+.containerIndex span i {
+  color: rgb(1, 120, 255);
+  font-size: 28px;
+}
+
+.headerIndex {
+  background-image: url(/assets/img/bannerIndex.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+.headerIndex h1 {
+  background-color: rgb(0, 0, 0);
+  opacity: 80%;
+}
+.headerIndex img {
+  width: 100%;
+}
+
+.carrito {
+  width: 40px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 95%;
+  margin-top: -20px;
+}
+.carrito a {
+  color: white;
+}
+.carrito :hover {
+  background-color: rgb(3, 47, 97);
+  transition: 0.7s;
+  cursor: pointer;
+  color: white;
+}
+
+header h4 {
+  margin: auto;
+  background-color: rgb(1, 120, 255);
+  color: rgb(255, 255, 255);
+  height: 80px;
+  width: 50%;
+  margin-top: 50px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 #formgarantia {
   margin-left: 5%;
 }
@@ -910,47 +997,21 @@ main section {
   transform: scale(400);
 }
 
-.containerIndex {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  padding: 50px;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  width: 100%;
+nav {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  z-index: 1;
 }
-.containerIndex p {
-  border: solid 1px grey;
-  border-radius: 50px;
-  width: 100%;
+nav ul :hover {
+  background-color: rgb(3, 47, 97);
+  transition: 0.7s;
 }
-.containerIndex div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 75%;
-  width: 100%;
-}
-.containerIndex div b {
-  width: 100%;
-  font-size: 28px;
-}
-.containerIndex h3 {
-  color: rgb(1, 120, 255);
-}
-.containerIndex h3 i {
-  color: rgb(1, 120, 255);
-}
-.containerIndex span {
-  color: rgb(1, 120, 255);
-  font-size: 28px;
-}
-.containerIndex span i {
-  color: rgb(1, 120, 255);
-  font-size: 28px;
+nav ul :hover li :hover {
+  background-color: rgb(3, 47, 97);
+  transition: 0.7s;
 }
 
+/*Todos los Media*/
 @media (max-width: 1610px) {
   .containerIndex {
     padding: 20px;
@@ -1060,53 +1121,19 @@ main section {
     font-size: 50px;
   }
 }
-nav {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  z-index: 1;
+@media (max-width: 898px) {
+  .headerIndex {
+    margin: auto;
+    margin-top: 20px;
+  }
 }
-nav ul :hover {
-  background-color: rgb(3, 47, 97);
-  transition: 0.7s;
+@media (max-width: 1290px) {
+  .mainIndex {
+    margin: 20px;
+    border: none;
+    box-shadow: none;
+  }
 }
-nav ul :hover li :hover {
-  background-color: rgb(3, 47, 97);
-  transition: 0.7s;
-}
-
-.carrito {
-  width: 40px;
-  height: 30px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-left: 95%;
-  margin-top: -20px;
-}
-.carrito a {
-  color: white;
-}
-
-.carrito:hover {
-  background-color: rgb(3, 47, 97);
-  transition: 0.7s;
-  cursor: pointer;
-  color: white;
-}
-
-header h4 {
-  margin: auto;
-  background-color: rgb(1, 120, 255);
-  color: rgb(255, 255, 255);
-  height: 80px;
-  width: 50%;
-  margin-top: 50px;
-  padding: 25px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 @media (max-width: 534px) {
   header h4 {
     text-align: center;
