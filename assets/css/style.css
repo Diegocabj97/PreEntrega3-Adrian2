@@ -739,6 +739,23 @@
   text-decoration: underline;
 }
 
+.ItemsPr {
+  border: 1px solid rgba(95, 94, 94, 0.377);
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(134, 134, 134, 0.973);
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .ItemsPr {
+    border: none;
+    width: 100%;
+    margin-left: -10px;
+    box-shadow: none;
+  }
+}
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
@@ -931,23 +948,27 @@ header h4 {
 .filtroOfertas {
   border: 1px solid rgba(128, 128, 128, 0.336);
   border-radius: 10px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  justify-content: space-between;
-  width: 15%;
   height: fit-content;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
   box-sizing: border-box;
-  align-content: flex-start;
+  margin: 0px;
+  margin-top: 100px;
 }
 
-.cardsOfertas {
-  margin: 50px;
+.cardsOfertas h2 {
+  margin: auto;
   padding: 20px;
+  text-align: center;
+}
+
+.mainOfertas {
+  margin: auto;
   border: 1px solid rgba(172, 172, 172, 0.212);
+  box-shadow: 0px 1px 10px rgba(134, 134, 134, 0.973);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #formgarantia {

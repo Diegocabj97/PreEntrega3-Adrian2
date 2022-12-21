@@ -21,11 +21,13 @@
 @import "headerofertas";
 @import "filtroOfertas";
 @import "cardsOfertas";
+@import "mainOfertas";
 
 nav {
 	text-decoration: none;
 	color: $color1;
 	z-index: 1;
+    
 	
 	& ul :hover{
 		background-color: rgb(3, 47, 97);
@@ -34,6 +36,7 @@ nav {
 		& li :hover{
 			background-color: rgb(3, 47, 97);
 			transition: 0.7s;
+            
 		}
 }
 }
